@@ -4,15 +4,17 @@ for windows:
 
 start zookeeper:
 
-        bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+    bin\windows\zookeeper-server-start.bat config\zookeeper.properties
 
 start Kafka:
         
-        bin\windows\kafka-server-start.bat config\server.properties
+    bin\windows\kafka-server-start.bat config\server.properties
+
+for use in docker console:
 
 open consumer window with messages:
 
-        kafka-console-consumer.sh --topic topic --from-beginning --bootstrap-server localhost:9092
+    kafka-console-consumer.sh --topic topic --from-beginning --bootstrap-server localhost:9092
 
 info: 
 
